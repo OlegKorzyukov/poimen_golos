@@ -1,0 +1,16 @@
+{
+    "name": "kpces/khor-golos",
+    "type": "project",
+    "license": "Proprietary",
+    "authors": [{
+        "name": "Vorbis",
+        "email": "vorbis95@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "Includes"
+        }
+    }
+}

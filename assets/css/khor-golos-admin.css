@@ -1,0 +1,651 @@
+.ok-wrap{
+  margin-top: 10px;
+}
+.ok-upload_file form, .ok-upload-result-file form {
+  width: 100%;
+  padding: 20px 30px;
+  position: relative;
+  height: 230px;
+}
+
+.upload-input-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.upload-file-input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.upload-file-input-wrapper {
+  height: 100%;
+  width: 43%;
+  background: #77777721;
+  border: 3px dashed #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.upload-file-text {
+  font-size: 20px;
+  color: #969696;
+}
+
+.field-num-session-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.field-num-convocation-wrapper{
+  text-align: center;
+}
+.field-num-session, .field-num-convocation {
+  padding: 15px 10px !important;
+  height: 46%;
+  text-align: center;
+  width: 51% !important;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 0 !important;
+}
+.field-num-convocation{
+  margin-top: 5px;
+}
+.submit-file-upload {
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffd600;
+  border: none;
+  color: #6b6b6b;
+  height: 45%;
+  width: 51%;
+  box-shadow: 4px 4px;
+  transition: 0.5s;
+}
+
+.submit-file-upload:hover {
+  transition: 0.5s;
+  box-shadow: 0 0;
+}
+.ok-upload-result-file, .ok-upload_file{
+  display: none;
+}
+
+.ok-upload-result-file select{
+  padding: 15px 10px;
+    height: auto;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 0 !important;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #777;
+    transition: 50ms border-color ease-in-out;
+    margin-bottom: 5px;
+}
+
+.ok-upload-result-file .field-num-session-wrapper{
+  margin-left: 180px;
+}
+.ok-upload-result-file .submit-file-upload{
+  width: 100%;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 ADMIN TABLE                                */
+/* -------------------------------------------------------------------------- */
+.ok-control-table-files-second-group{
+  display: none;
+  align-items: center;
+  height: 66px;
+}
+.ok-control-table-files-second-group a{
+  padding: 10px 27px;
+  font-size: 22px;
+}
+.show_upload_table{
+  margin-top: 55px;
+}
+.show_upload_table h3{
+  text-align: center;
+}
+.show_upload_table table th{
+  text-align: center;
+}
+
+.confirm-delete-session,
+.view-golos-file-modal,
+.view-golos-subtable-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #dcdcdc7d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.delete-session__wrapper {
+    background: #fff;
+    font-weight: bold;
+    margin-top: 17%;
+    padding: 50px;
+    position: fixed;
+}
+
+.remove-solution {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.remove-solution span {
+  padding: 5px 22px;
+}
+
+.remove-solution span:hover {
+  cursor: pointer;
+}
+
+.remove-solution__yes {
+  font-weight: 400;
+}
+
+.stack-button-active {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active-change {
+  border: 1px solid;
+  padding: 16px;
+  border-radius: 0;
+  background: #fff;
+}
+
+.admin_subtable_link {
+  border-radius: 0;
+}
+
+.admin_subrow_session td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.admin_subrow_session td {
+  text-align: center;
+}
+.admin_subrow_session td:last-of-type{
+  border: none;
+}
+
+.change,
+.remove {
+  padding: 10px 27px;
+  font-size: 18px;
+}
+
+.change:hover,
+.remove:hover {
+  transform: scale(1.1);
+}
+
+.remove {
+  color: #f00;
+}
+
+.detail-icon i {
+  font-size: 26px;
+}
+
+.admin_subtable-active-button {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.admin_subtable-active-button a {
+  display: block;
+  font-size: 20px;
+}
+
+.pdname_content,
+.glname_content {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.admin_subtable_link {
+  padding: 12px;
+}
+
+table input {
+  border-radius: 0 !important;
+}
+
+.modal-file-view-wrapper {
+  position: fixed;
+  width: 60%;
+  height: 92%;
+}
+
+.view-golos-subtable-modal__show {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  padding: 60px 50px;
+  overflow: auto;
+}
+
+.modal-file-view-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-file-view-wrapper .close-modal-file-view,
+.view-golos-subtable-modal__show .close-modal-file-view {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 31px;
+  top: 56px;
+  z-index: 2;
+}
+
+.admin_subtable-info-wrpapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgb(60 141 55 / 18%);
+}
+
+.ok-head-selector-upload-file{
+  display: flex;
+  border-bottom: 3px solid #77777726;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.ok-head-selector-upload-file span{
+  cursor: pointer;
+  padding: 10px 10px;
+  background: #5e8bcd;
+  border-radius: 10px 0px 10px 0px;
+  color: #fff;
+  font-weight: bold;
+}
+.ok-head-selector-upload-file span:nth-of-type(1){
+  padding-right: 20px;
+}
+.ok-head-selector-upload-file span:nth-of-type(2){
+  position: relative;
+  left: -12px;
+}
+.ok-head-selector-upload-file .ok-active{
+  background:#9ddca8 !important;
+}
+.ok-toggle-active{
+  display: block !important;
+}
+.ok-animation-toggle{
+  animation-name: ok-animation-toggle;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes ok-animation-toggle {
+  0%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*==================================== SUBTABLE ==========================*/
+.detail-view {
+  background-color: transparent !important;
+}
+
+.detail-view .admin_subtable:hover {
+  background-color: rgb(60 141 55 / 18%);
+}
+
+.detail-view>td>tr:nth-child(even) {
+  background-color: #b5b5b52b;
+}
+
+.view-golos-subtable-modal__row {
+  padding: 5px 0;
+}
+
+.admin_subtable-info-wrpapper .admin_subtable-info__link {
+  width: 11%;
+  border: 1px solid #777;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #3a51c3;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.admin_subtable-info-wrpapper .admin_subtable-info__link:hover {
+  background: #ffd40061;
+  transition: 0.3s;
+}
+
+.admin_subtable-info-wrpapper .admin_subtable-info__link:last-child {
+  width: auto;
+}
+
+.admin_subtable-meta {
+  border-bottom: 4px solid #257f664d;
+  border-left: 4px solid #257f664d;
+  border-right: 4px solid #257f664d;
+}
+
+.admin_subrow_session-main-meta-info td:first-child {
+  display: none;
+}
+
+.view-public-golos-meta-table__title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-public-golos-meta-table__title-info {
+  margin-bottom: 20px;
+}
+
+
+/********************** LOAD FILE GOLOS *********************************/
+.admin_subtable_link_media_wrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.admin_subtable_link_media_wrapper:hover {
+  background: #17863417;
+  transition: 0.3s;
+}
+
+.admin_subtable_link_media_wrapper .admin_subtable_link_media {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #a8a8a8;
+  background: transparent;
+  z-index: 2;
+}
+
+.admin_subtable_link_media_wrapper .admin_subtable_link_media_icon {
+  position: absolute;
+  font-size: 67px;
+  font-weight: 100;
+  color: #a8a8a8;
+}
+
+.admin_subtable .golos-file-upload-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin_subtable .golos-file-upload-form .admin_subtable_link {
+  height: auto;
+}
+
+.admin_subtable .golos-file-upload-form .remove_file_golos_button {
+  border-radius: unset;
+  height: 100px;
+  display: none;
+  background: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              DEPUT ADMIN PAGE                              */
+/* -------------------------------------------------------------------------- */
+.ok-show-table{
+  cursor: pointer;
+  display: inline-block;
+}
+.ok-deput-title-wrapper{
+  text-align: center;
+}
+.ok-deput-title-wrapper .ok-title-arrow img{
+  width: 40px;
+  transition: 0.5s;
+}
+.ok-deput-table-admin.show .bootstrap-table{
+  height: 100%;
+  transition: 0.5s;
+}
+.ok-deput-table-admin.show .ok-deput-title-wrapper .ok-title-arrow img{
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.ok-deput-table-admin .bootstrap-table{
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.ok-deput-table-admin{
+  margin-top: 55px;
+}
+.ok-title-deput-convocation{
+  text-align: center;
+}
+.error-yes{
+  border: 2px solid red !important;
+  margin: 0;
+}
+.ok-error{
+  font-weight: bold;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.ok-add-new-deput-form-window input, 
+.ok-add-new-deput-form-window textarea{
+  width: 78%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.ok-add-new-deput-form-window textarea{
+  height: 200px;
+}
+.ok-add-new-deput-form-window{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-100%);
+  transition: 0.3s;
+}
+.ok-add-new-deput-form-group-input{
+  background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    padding: 61px 0;
+    z-index: 99;
+    position: fixed;
+    top: 15%;
+}
+.ok-add-new-deput-show.open .ok-add-new-deput-form-wrapper{
+  opacity: 1;
+  z-index: 1;
+  transition: 0.2s;
+}
+.ok-add-new-deput-show.open .ok-add-new-deput-form-window{
+  transform: translateY(-8%);
+  transition: 0.3s;
+}
+
+.ok-add-new-deput-form-wrapper{
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #7777772e;
+  transition: 0.2s;
+}
+.ok-add-new-deput button{
+  padding: 16px 27px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffd600;
+  border: none;
+  color: #6b6b6b;
+  box-shadow: 4px 4px;
+  transition: 0.5s;
+}
+.ok-add-new-deput-form-window_submit{
+  padding: 16px 82px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffd600;
+  border: none;
+  color: #6b6b6b;
+  box-shadow: 4px 4px;
+  transition: 0.5s;
+}
+
+.deput-img-wrapper {
+  text-align: center;
+}
+
+.deput-img-wrapper .deput-img {
+  width: 128px;
+  height: 155px;
+  object-fit: contain;
+}
+
+.deput-name {
+  font-weight: bold;
+}
+
+.deput-fraction,
+.deput-birthday,
+.deput-change-button-wrapper,
+.deput-convocation {
+  text-align: center;
+}
+
+.deput-change-button {
+  font-size: 28px;
+}
+
+.stack-button-active-deputy {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.stack-button-active-deputy .admin_deputy-cancel-button,
+.admin_subtable-cancel-button {
+  color: #f00;
+}
+
+.deput-photo-wrapper .deput-golos-photo {
+  width: 154px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.deput-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deput-photo-wrapper .upload_image_button {
+  width: 70%;
+  border-radius: 0;
+}
+
+.deput-photo-wrapper .remove_image_button {
+  width: 25%;
+  border-radius: 0;
+}
+
+.deput-photo_input_group {
+  margin-top: 10px;
+}
+
+.photo-input-wrapper {
+  display: none;
+}
+
+.ok-add-new-deput-form-group-input .deput-golos-photo,
+.ok-add-new-deput-form-group-input .remove_image_button{
+  display: none;
+}
+
+.ok-add-new-deput-form-group-input .upload_image_button{
+  width: 154px;
+  height: 200px;
+  font-size: 69px;
+}
+
+.ok-add-new-deput-form-group-input .wrap-deput-upload{
+  margin-bottom: 20px;
+}
+.ok-add-new-deput-form-group-input .deput-photo_input_group,
+.ok-add-new-deput-form-group-input .remove_image_button{
+  width: 100%;
+}
+#khor_golos_deput_table .active-change{
+  border: 2px solid #000;
+}
+#khor_golos_deput_table thead{
+  text-align: center;
+}
+/*****************************************************************/
+/************************** HEAD TABLE ADMIN *********************/
+/****************************************************************/
+
+.admin_subrow_session-main-meta-info .head-info-table {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.admin_subrow_session-main-meta-info .head-info-table .head-info-table-part {
+  text-align: center;
+  background: #ededed;
+  padding: 2px 8px;
+}
